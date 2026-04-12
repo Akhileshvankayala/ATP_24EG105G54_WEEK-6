@@ -1,0 +1,26 @@
+###create employee
+POST http://localhost:4000/employee-api/employee
+Content-Type: application/json
+
+{
+    "name":"teddy",
+    "email":"teddy@gmail.com",
+    "mobile":"9999999999",
+    "designation":"CEO",
+    "companyName":"aks"
+}
+###read all employees
+GET http://localhost:4000/employee-api/employee/teddy@gmail.com
+###edit employees
+PUT http://localhost:4000/employee-api/employee/teddy@gmail.com
+Content-Type: application/json
+
+{
+    "name":"teddyluuuuuuu",
+    "email":"teddy@gmail.com",
+    "mobile":"9999999999",
+    "designation":"CEO",
+    "companyName":"aks"
+}
+###delete employees
+DELETE http://localhost:4000/employee-api/employee/teddy@gmail.com
