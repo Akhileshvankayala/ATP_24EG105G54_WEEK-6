@@ -1,6 +1,6 @@
 import {useContext} from "react"
 import { counterContextObj } from "../contexts/ContextProvider"
-import Test from "./test";
+import Test from "./Test";
 import { useCounterStore } from "../stores/useCounterStore";
 function Home() {
 const {counter,changeCounter}=useContext(counterContextObj);
